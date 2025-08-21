@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vignesh's Portfolio</title>
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(120deg, #1c9696, #fda085);
+      color: #fff;
+    }
+
+    header {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 5rem 1rem 3rem;
+      background: linear-gradient(135deg, #667eea, #764ba2);
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.8rem;
+      margin-bottom: 0.5rem;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      opacity: 0.9;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      background: rgba(0,0,0,0.2);
+      backdrop-filter: blur(5px);
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      padding: 1rem;
+      font-weight: 500;
+      transition: background 0.3s, color 0.3s;
+    }
+
+    nav a:hover {
+      background: rgba(255,255,255,0.2);
+      border-radius: 5px;
+    }
+
+    main {
+      max-width: 1000px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+
+    section {
+      background: rgba(255,255,255,0.1);
+      border-radius: 20px;
+      padding: 2rem;
+      margin-bottom: 2rem;
+      box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+      backdrop-filter: blur(10px);
+      transition: transform 0.3s, opacity 0.3s;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 1rem;
+      font-size: 2rem;
+      color: #fff;
+    }
+
+    .profile-photo {
+      display: block;
+      width: 140px;
+      border-radius: 50%;
+      margin: 0 auto 1rem;
+      border: 4px solid #fff;
+    }
+
+    .contact-links {
+      text-align: center;
+      margin-top: 1rem;
+    }
+
+    .contact-links a {
+      color: #fff;
+      font-size: 1.8rem;
+      margin: 0 0.6rem;
+      transition: transform 0.3s, color 0.3s;
+    }
+
+    .contact-links a:hover {
+      color: #ffd700;
+      transform: scale(1.3);
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .card {
+      background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+      color: #333;
+      border-radius: 15px;
+      padding: 1.5rem;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 12px 25px rgba(0,0,0,0.4);
+    }
+
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 0.8rem;
+    }
+
+    .skills span {
+      background: rgba(255,255,255,0.2);
+      padding: 0.5rem 1rem;
+      border-radius: 20px;
+      font-size: 1rem;
+      color: #fff;
+    }
+
+    form {
+      display: grid;
+      gap: 1rem;
+    }
+
+    input, textarea {
+      padding: 0.8rem;
+      border: none;
+      border-radius: 8px;
+      font-family: inherit;
+      width: 100%;
+    }
+
+    button {
+      background: #ffd700;
+      color: #333;
+      border: none;
+      padding: 0.8rem;
+      border-radius: 8px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    button:hover {
+      background: #ffbf00;
+    }
+
+    /* Animation: fade-in on scroll */
+    .fade-in {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+
+    .fade-in.visible {
+      opacity: 1;
+      transform: none;
+      transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Vignesh's Portfolio</h1>
+    <p>Web Developer & Designer</p>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#skills">Skills</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <main>
+    <section id="about" class="fade-in">
+      <img src="passport photo.jpg" alt="Vignesh.S" class="profile-photo">
+      <h2>About Me</h2>
+      <p>Hello! I'm <strong>Vignesh.S</strong>, a creative web developer focused on elegant and functional design. I aim to work in an environment that helps me grow and use my skills effectively.</p>
+      <div class="contact-links">
+        <a href="https://github.com/ai2253" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/vignesh-s-725b27257/" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="mailto:vignesh.selvaraj1204@gmail.com"><i class="fas fa-envelope"></i></a>
+        <a href="tel:+6381195979"><i class="fas fa-phone"></i></a>
+      </div>
+    </section>
+
+    <section id="projects" class="fade-in">
+      <h2>Projects</h2>
+      <div class="cards">
+        <div class="card">
+          <h3>AI Skin Disease Diagnosis</h3>
+          <p>AI-powered system that diagnoses skin diseases and recommends treatment using deep learning.</p>
+        </div>
+        <div class="card">
+          <h3>Food App UI/UX</h3>
+          <p>Designed wireframes and prototypes for a food delivery app, ensuring an intuitive user experience.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="fade-in">
+      <h2>Skills</h2>
+      <div class="skills">
+        <span>HTML/CSS</span>
+        <span>UI/UX Design</span>
+        <span>Java</span>
+        <span>Python</span>
+        <span>Prompt Engineering</span>
+        <span>AWS</span>
+      </div>
+    </section>
+
+    <section id="contact" class="fade-in">
+      <h2>Contact Me</h2>
+      <form action="#" method="post">
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea placeholder="Your Message" required></textarea>
+        <button type="submit">Send</button>
+      </form>
+    </section>
+  </main>
+
+  <script>
+    // Fade-in on scroll
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if(entry.isIntersecting){
+          entry.target.classList.add('visible');
+        }
+      });
+    }, {threshold: 0.2});
+    document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+  </script>
+</body>
+</html>
